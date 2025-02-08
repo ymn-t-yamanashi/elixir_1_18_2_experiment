@@ -13,6 +13,8 @@ defmodule Elixir1182Experiment do
 
   """
   def hello do
+    car_choices = [:toyota]
+    User.drive({:ok, %User{}}, car_choices)
     :world
   end
 end
