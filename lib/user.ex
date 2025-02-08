@@ -9,7 +9,7 @@ defmodule User do
     end
   end
 
-  def drive(_, _car_choices) do
+  def drive(%User{}, _car_choices) do
     {:error, :not_allowed}
   end
 end
